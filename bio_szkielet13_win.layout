@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="model.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="986" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="21" />
+		</Folding>
+	</File>
+	<File name="vshader.glsl" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="83" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="shaderprogram.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1256" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="include\drzewo.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="631" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="include\galaz.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="749" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="fshader.glsl" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="589" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cube.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="120" />
+		</Cursor>
+	</File>
+	<File name="model.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="26" />
+		</Cursor>
+	</File>
+	<File name="main_file.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6757" topLine="137" />
+		</Cursor>
+		<Folding>
+			<Collapse line="89" />
+			<Collapse line="99" />
+			<Collapse line="142" />
+		</Folding>
+	</File>
+	<File name="allmodels.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="915" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="cube.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1210" topLine="41" />
+		</Cursor>
+	</File>
+	<File name="src\drzewo.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8468" topLine="84" />
+		</Cursor>
+		<Folding>
+			<Collapse line="52" />
+			<Collapse line="59" />
+			<Collapse line="66" />
+			<Collapse line="73" />
+		</Folding>
+	</File>
+	<File name="shaderprogram.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2738" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="src\galaz.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1018" topLine="26" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+			<Collapse line="20" />
+			<Collapse line="27" />
+			<Collapse line="33" />
+			<Collapse line="42" />
+		</Folding>
+	</File>
+</CodeBlocks_layout_file>
