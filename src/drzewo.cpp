@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "allmodels.h"
 #include "cube.h"
+#include "cone.h"
 #include "shaderprogram.h"
 
 using namespace glm;
@@ -73,14 +74,12 @@ void drzewo:: rysuj_prostopadloscian(mat4 P, mat4 V, mat4 M, float a, float b, f
 
 void drzewo:: rysuj_stozek(ShaderProgram *shaderProgram, mat4 mP, mat4 mV, mat4 mM) {
 
+cone stozek;
 	//Kostka
-float* vertices=Models::CubeInternal::vertices;
-float* normals=Models::CubeInternal::normals;
-float* texCoords=Models::CubeInternal::texCoords;
-float* c1=Models::CubeInternal::c1;
-float* c2=Models::CubeInternal::c2;
-float* c3=Models::CubeInternal::c3;
-int vertexCount=Models::CubeInternal::vertexCount;
+float* vertices=stozek.vertices;
+float* normals=stozek.normals;
+float* texCoords=stozek.texCoords;
+int vertexCount=stozek.vertexCount;
 
 
 	//Włączenie programu cieniującego, który ma zostać użyty do rysowania
@@ -103,8 +102,6 @@ int vertexCount=Models::CubeInternal::vertexCount;
 
 	//Powiąż zmienne typu sampler2D z jednostkami teksturującymi
 	glUniform1i(shaderProgram->getUniformLocation("diffuseMap"),0);
-	glUniform1i(shaderProgram->getUniformLocation("normalMap"),1);
-	glUniform1i(shaderProgram->getUniformLocation("heightMap"),2);
 
 
 	//Przypisz tekstury do jednostek teksturujących
@@ -123,9 +120,6 @@ int vertexCount=Models::CubeInternal::vertexCount;
     glEnableVertexAttribArray(shaderProgram->getAttribLocation("vertex"));
     glEnableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
     glEnableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c1"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c2"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c3"));
 
     //Wskaż tablicę z której należy pobrać dane do atrybutu o konkretnym numerze.
     //Pierwszym argumentem jest numer przypisany atrybutowi, ostatnim tablica zdanymi.
@@ -133,9 +127,6 @@ int vertexCount=Models::CubeInternal::vertexCount;
     glVertexAttribPointer(shaderProgram->getAttribLocation("vertex"),4,GL_FLOAT,false,0,vertices);
     glVertexAttribPointer(shaderProgram->getAttribLocation("normal"),4,GL_FLOAT,false,0,normals);
     glVertexAttribPointer(shaderProgram->getAttribLocation("texCoord0"),2,GL_FLOAT,false,0,texCoords);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c1"),4,GL_FLOAT,false,0,c1);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c2"),4,GL_FLOAT,false,0,c2);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c3"),4,GL_FLOAT,false,0,c3);
 
 	//Narysowanie obiektu
 	glDrawArrays(GL_TRIANGLES,0,vertexCount);
@@ -146,9 +137,6 @@ int vertexCount=Models::CubeInternal::vertexCount;
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("color"));
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c1"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c2"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c3"));
 }
 
 
