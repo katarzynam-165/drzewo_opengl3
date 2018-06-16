@@ -2452,7 +2452,7 @@
 	<iostream>
 	"lodepng.h"
 
-1528569013 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
+1529182234 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -2568,7 +2568,9 @@
 	"GL/glew.h"
 	"stdio.h"
 
-1528489139 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\cone.h
+1529181545 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\cone.h
+	"shaderprogram.h"
+	<glm/gtc/matrix_transform.hpp>
 
 1528236890 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\drzewo.h
 	<list>
@@ -2598,7 +2600,7 @@
 1528089028 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\shaderprogram.cpp
 	"shaderprogram.h"
 
-1528500528 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\cone.cpp
+1529182437 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\cone.cpp
 	"include/cone.h"
 	<GL/glew.h>
 	<GLFW/glfw3.h>
@@ -2607,6 +2609,8 @@
 	<glm/gtc/matrix_transform.hpp>
 	<stdlib.h>
 	<stdio.h>
+	"shaderprogram.h"
+	<iostream>
 
 1528488777 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\drzewo.cpp
 	"include/drzewo.h"

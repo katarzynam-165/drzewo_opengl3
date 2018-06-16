@@ -17,16 +17,16 @@ void main(void) {
     vec4 r=reflect(-l,n);
 
     vec4 ka=vec4(0,0,0,0); //Kolor obiektu w swietle otoczenia
-    vec4 kd=texture(diffuseMap,iTexCoord0); //Kolor obiektu w swietle rozproszonym
+    vec4 kd=texture(diffuseMap,iTexCoord0);//texture(diffuseMap,iTexCoord0); //Kolor obiektu w swietle rozproszonym
     vec4 ks=vec4(1,1,1,0); //Kolor obiektu w swietle odbitym
 
 
     vec4 la=vec4(0,0,0,0); //Kolor swiatla otoczenia
     vec4 ld=vec4(1,1,1,1); //Kolor swiatla rozpraszanego
-    vec4 ls=vec4(1,1,1,0); //Kolor swiatla odbijanego
+    vec4 ls=vec4(0.1,0.1,0.1,0); //Kolor swiatla odbijanego
 
     float nl=max(dot(n,l),0); //Kosinus kata pomiedzy wektorami do swiatla i normalnym
-    float rv=pow(max(dot(r,v),0),10); //Kosinus kata pomiedzy wektorami do obserwatora i odbitym, podniesiony do wykladnika Phonga
+    float rv=pow(max(dot(r,v),0),1); //Kosinus kata pomiedzy wektorami do obserwatora i odbitym, podniesiony do wykladnika Phonga
 
 	pixelColor=ka*la+kd*ld*vec4(nl,nl,nl,1)+ks*ls*vec4(rv,rv,rv,0);
 }

@@ -7,8 +7,8 @@ uniform mat4 M;
 
 
 //Atrybuty
-in vec4 vertex; //wspolrzedne wierzcholka w przestrzeni modelu
-in vec4 normal; //wektor normalny w wierzcholku w przestrzeni modelu
+in vec3 vertex; //wspolrzedne wierzcholka w przestrzeni modelu
+in vec3 normal; //wektor normalny w wierzcholku w przestrzeni modelu
 in vec2 texCoord0; //wspolrzedne teksturowania
 
 
@@ -18,18 +18,19 @@ out vec4 i_v; //wektor do obserwatora(przestrzen oka)
 out vec4 i_n; //wektor normalny (przestrzen oka)
 out vec2 iTexCoord0; //wspolrzedne teksturowania
 
+uniform vec4 lp;
 
 void main(void) {
 
-    vec4 lp=vec4(0,0,-6,1); //Wspolrzedne swiatla w przestrzeni swiata
+    //vec4 lp=vec4(0,0,-6,1); //Wspolrzedne swiatla w przestrzeni swiata
 
-    i_l=normalize(V*lp-V*M*vertex);
-    i_v=normalize(vec4(0,0,0,1)-V*M*vertex);
-    i_n=normalize(V*M*normal);
+    i_l=normalize(V*lp-V*M*vec4(vertex,1));
+    i_v=normalize(vec4(0,0,0,1)-V*M*vec4(vertex,1));
+    i_n=normalize(V*M*vec4(-normal,0));
 
     iTexCoord0=texCoord0;
 
-	gl_Position=P*V*M*vertex;
+	gl_Position=P*V*M*vec4(vertex,1);
 }
 
 

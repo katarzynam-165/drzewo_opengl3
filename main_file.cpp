@@ -184,23 +184,13 @@ void loadOBJ(string path){
     }
 */
 
-//cone stozek = cone();
 
-float* vertices=coneNamespace::vertices;
-float* normals=coneNamespace::normals;
-float* texCoords=coneNamespace::texCoords;
-int vertexCount=216;
-
-/*
-float* vertices=Models::CubeInternal::vertices;
-float* normals=Models::CubeInternal::normals;
-float* texCoords=Models::CubeInternal::texCoords;
-int vertexCount=Models::CubeInternal::vertexCount;*/
 
 float wzrost = 1;
 float tempo_wzrostu=0.02;
 float max_wysokosc_drzewa=5;
 
+cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
 
@@ -287,6 +277,7 @@ void initOpenGLProgram(GLFWwindow* window) {
 	shaderProgram=new ShaderProgram("vshader.glsl",NULL,"fshader.glsl"); //Wczytaj program cieniujący
 
 	k_diffTex=readTexture("kora_albedo.png");
+
 }
 
 //Zwolnienie zasobów zajętych przez program
@@ -393,6 +384,7 @@ int vertexCount=Models::CubeInternal::vertexCount;
 void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,ShaderProgram *shaderProgram) {
 
 	//************Tutaj umieszczaj kod rysujący obraz******************l
+    shaderProgram->use();
 
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Wykonaj czyszczenie bufora kolorów i głębokości
 
@@ -404,49 +396,22 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,Sh
 		glm::vec3(0.0f, 1.0f, 0.0f));
 
     mat4 M = mat4(1.0f);
-    //M=translate(M, vec3(-3,0,0));
-    M=rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
-    M=rotate(M,angle_y,vec3(0.0f,1.0f,0.0f));
+    M = translate(M, vec3(1,0,0));
+    M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
+    M = rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
+    M = rotate(M,angle_y,vec3(0.0f,0.0f,1.0f));
 
 
 
-	// rysowanie
+    stozek.drawCone(P,V,M,shaderProgram,k_diffTex);
 
-	shaderProgram->use();
+    mat4 M2 = mat4(1.0f);
+    M2 = translate(mat4(1.0f), vec3(-1,0,0));
+    M2 = rotate(M2,110*PI/180,vec3(-1.0f,0.0f,0.0f));
+    M2 = rotate(M2,angle_x,vec3(1.0f,0.0f,0.0f));
+    M2 = rotate(M2,angle_y,vec3(0.0f,0.0f,1.0f));
 
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("P"),1, false, glm::value_ptr(P));
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("V"),1, false, glm::value_ptr(V));
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("M"),1, false, glm::value_ptr(M));
-
-	//Powiąż zmienne typu sampler2D z jednostkami teksturującymi
-	glUniform4f(shaderProgram->getUniformLocation("lp"), 0, 0, -6, 1);
-	glUniform1i(shaderProgram->getUniformLocation("diffuseMap"),0);
-
-
-	glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D,k_diffTex);
-
-
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("vertex"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-
-
-    glVertexAttribPointer(shaderProgram->getAttribLocation("vertex"),3,GL_FLOAT,false,0,vertices);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("normal"),3,GL_FLOAT,false,0,normals);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("texCoord0"),2,GL_FLOAT,false,0,texCoords);
-
-	//Narysowanie obiektu
-	glDrawArrays(GL_TRIANGLES,0,vertexCount);
-
-    glDrawArrays(GL_TRIANGLES,0,vertexCount);
-	glDisableVertexAttribArray(shaderProgram->getAttribLocation("vertex"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("color"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-
-
-
+    stozek.drawCone(P,V,M2,shaderProgram,k_diffTex);
 
 	//Przerzuć tylny bufor na przedni
 	glfwSwapBuffers(window);
