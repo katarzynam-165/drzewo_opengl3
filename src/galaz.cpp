@@ -48,7 +48,7 @@ void galaz:: losuj_kat_na_matce()
 //od 15 do 60
 void galaz:: losuj_kat_do_pionu()
     {
-    int r=losuj(1,10);
+    int r=losuj(3,10);
      kat_do_pionu=float(PI/r);
     };
 

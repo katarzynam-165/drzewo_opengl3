@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "allmodels.h"
+#include "cone.h"
 #include "shaderprogram.h"
 
 using namespace glm;
@@ -19,21 +20,23 @@ using namespace glm;
 using namespace:: std;
 class drzewo
 {
+private:
+    ShaderProgram* shaderProgram;
     public:
         GLuint k_diffTex; //Zmienna reprezentujaca teksturê
-        GLuint k_normalTex; //Zmienna reprezentujaca teksturê
-        GLuint k_heightTex; //Zmienna reprezentuj¹ca teksturê
         mat4 M_Pnia;
+        cone stozek = cone();
 
-        drzewo(GLuint d, GLuint n, GLuint h);
+        drzewo(GLuint d);
         virtual ~drzewo();
         void losuj_wysokosc_drzewa();
         int il_galezi=8; // w pierwszym pokoleniu
         galaz galezie[32];
         int wysokosc_drzewa;
         int grubosc_drzewa;
+
         void rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tablicy, ShaderProgram *shaderProgram);
-        void rysuj_drzewo(mat4 P, mat4 Mz, mat4 V, float wzrost, ShaderProgram *shaderProgram);
+        void rysuj_drzewo(mat4 P, mat4 Mz, mat4 V, float wzrost, ShaderProgram *shaderProgram,GLuint k_diffTex);
         int losuj(int mini, int maxi);
         void rysuj_prostopadloscian(mat4 P, mat4 V, mat4 M, float a, float b, float c, ShaderProgram *shaderProgram);
         void losuj_nowe_pokolenie_galezi(int nr_pokolenia);

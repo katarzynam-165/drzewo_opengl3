@@ -29,7 +29,6 @@ cone::cone()
 void cone::drawCone(mat4 P, mat4 V, mat4 M,ShaderProgram *shaderProgram, GLuint k_diffTex) {
 
 
-
 	glUniformMatrix4fv(shaderProgram->getUniformLocation("P"),1, false, glm::value_ptr(P));
 	glUniformMatrix4fv(shaderProgram->getUniformLocation("V"),1, false, glm::value_ptr(V));
 	glUniformMatrix4fv(shaderProgram->getUniformLocation("M"),1, false, glm::value_ptr(M));

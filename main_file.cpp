@@ -27,172 +27,29 @@ Place, Fifth Floor, Boston, MA  02110 - 1301  USA
 #include <glm/gtc/matrix_transform.hpp>
 #include <stdlib.h>
 #include <stdio.h>
+#include <iostream>
 #include "constants.h"
 #include "allmodels.h"
 #include "lodepng.h"
 #include "shaderprogram.h"
 #include "cone.h"
-//#include "drzewo.h"
+#include "drzewo.h"
 
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <ios>
-#include <fstream>
-#include <sstream>
-#include <cstring>
-#include <iomanip>
-
-using namespace std;
 using namespace glm;
-
-
-/*
-void loadOBJ(string path){
-
-        vector <float> faceVertices, faceUVs, faceNormals;
-        vector <float> tmpVertices, tmpUVs, tmpNormals;
-
-        ifstream file(path.c_str(), ios::in);
-        string line;
-
-        while(getline(file, line)){
-
-            if(line.substr(0, 2) == "v "){
-
-                istringstream sub(line.substr(2));
-                float x, y, z, w;
-                sub >> x;
-                sub >> y;
-                sub >> z;
-                w = 1.0f;
-                tmpVertices.push_back(x);
-                tmpVertices.push_back(y);
-                tmpVertices.push_back(z);
-                tmpVertices.push_back(w);
-
-            } else if(line.substr(0,3) == "vt "){
-
-                istringstream sub(line.substr(3));
-                float u, v;
-                sub >> u;
-                sub >> v;
-                tmpUVs.push_back(u);
-                tmpUVs.push_back(v);
-            } else if(line.substr(0,3) == "vn "){
-
-                istringstream sub(line.substr(3));
-                float x, y, z, w;
-                sub >> x;
-                sub >> y;
-                sub >> z;
-                w = 0.0f;
-                tmpNormals.push_back(x);
-                tmpNormals.push_back(y);
-                tmpNormals.push_back(z);
-                tmpNormals.push_back(w);
-
-            } else if(line.substr(0, 2) == "f "){
-
-                string sub = line.substr(2);
-                char* dup = strdup(sub.c_str());
-                char* token = strtok(dup, " ");
-                while(token != NULL){
-                    istringstream info(token);
-                    vector <int> tokens;
-                    string data;
-                    int index;
-                    while(getline(info, data, '/')){
-                        index = atoi(data.c_str());
-                        index--;
-                        tokens.push_back(index);
-                    }
-                    faceVertices.push_back(tokens[0]);
-                    faceUVs.push_back(tokens[1]);
-                    faceNormals.push_back(tokens[2]);
-                    tokens.clear();
-                    token = strtok(NULL, " ");
-                }
-            }
-        }
-
-        vertices = new float[faceVertices.size()*4];
-        uvs = new float[faceUVs.size()*2];
-        normals = new float[faceNormals.size()*4];
-        vertexCount = faceVertices.size();
-
-        int index_out = 0;
-
-        for(int i = 0; i < faceVertices.size(); i++){
-            int vIndex = faceVertices[i]*4;
-            vertices[index_out] = tmpVertices[vIndex];
-            index_out++;
-            vIndex++;
-            vertices[index_out] = tmpVertices[vIndex];
-            index_out++;
-            vIndex++;
-            vertices[index_out] = tmpVertices[vIndex];
-            index_out++;
-            vIndex++;
-            vertices[index_out] = tmpVertices[vIndex];
-            index_out++;
-            vIndex++;
-        }
-
-
-
-        index_out = 0;
-
-        for(int i = 0; i < faceUVs.size(); i++){
-            int uvIndex = faceUVs[i]*2;
-            uvs[index_out] = tmpUVs[uvIndex];
-            index_out++;
-            uvIndex++;
-            uvs[index_out] = tmpUVs[uvIndex];
-            index_out++;
-            uvIndex++;
-        }
-
-        index_out = 0;
-
-        for(int i = 0; i < faceNormals.size(); i++){
-            int nIndex = faceNormals[i]*4;
-            normals[index_out] = tmpNormals[nIndex];
-            index_out++;
-            nIndex++;
-            normals[index_out] = tmpNormals[nIndex];
-            index_out++;
-            nIndex++;
-            normals[index_out] = tmpNormals[nIndex];
-            index_out++;
-            nIndex++;
-            normals[index_out] = tmpNormals[nIndex];
-            index_out++;
-            nIndex++;
-        }
-
-        ofstream temp("normalne.txt", ios::out);
-        temp.setf(ios_base::fixed);
-        temp.precision(6);
-        cout << vertexCount << endl << endl;
-
-
-
-        for(int i = 0; i < faceNormals.size()*4; i+=4)
-            temp << normals[i] << ", " <<  normals[i+1] << ", " << normals[i+2] << ", " << normals[i+3] << "," <<  endl;
-    }
-*/
-
-
+using namespace std;
 
 float wzrost = 1;
 float tempo_wzrostu=0.02;
 float max_wysokosc_drzewa=5;
-
 cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
+//GLuint k_normalTex; //Zmienna reprezentujaca teksturę
+//GLuint k_heightTex; //Zmienna reprezentująca teksturę
+
+//GLuint z_diffTex; //Zmienna reprezentujaca teksturę
+//GLuint z_normalTex; //Zmienna reprezentujaca teksturę
+//GLuint z_heightTex; //Zmienna reprezentująca teksturę
 
 
 
@@ -200,7 +57,6 @@ float speed_x = 0; // [radiany/s]
 float speed_y = 0; // [radiany/s]
 
 float aspect=1; //Stosunek szerokości do wysokości okna
-
 
 //Uchwyty na shadery
 ShaderProgram *shaderProgram; //Wskaźnik na obiekt reprezentujący program cieniujący.
@@ -275,8 +131,14 @@ void initOpenGLProgram(GLFWwindow* window) {
 	glfwSetFramebufferSizeCallback(window,windowResize); //Zarejestruj procedurę obsługi zmiany rozmiaru bufora ramki
 
 	shaderProgram=new ShaderProgram("vshader.glsl",NULL,"fshader.glsl"); //Wczytaj program cieniujący
+    shaderProgram->use();
 
 	k_diffTex=readTexture("kora_albedo.png");
+	//k_normalTex=readTexture("kora_normal.png");
+    //k_heightTex=readTexture("kora_height.png");
+    //z_diffTex=readTexture("ziemia_albedo.png");
+	//z_normalTex=readTexture("ziemia_normal.png");
+    //z_heightTex=readTexture("ziemia_height.png");
 
 }
 
@@ -285,6 +147,11 @@ void freeOpenGLProgram() {
 	delete shaderProgram; //Usunięcie programu cieniującego
 
 	glDeleteTextures(1,&k_diffTex);
+	//glDeleteTextures(1,&k_normalTex);
+	//glDeleteTextures(1,&k_heightTex);
+    //glDeleteTextures(1,&z_diffTex);
+	//glDeleteTextures(1,&z_normalTex);
+	//glDeleteTextures(1,&z_heightTex);
 
 }
 /*
@@ -303,7 +170,7 @@ int vertexCount=Models::CubeInternal::vertexCount;
 	//Włączenie programu cieniującego, który ma zostać użyty do rysowania
 	//W tym programie wystarczyłoby wywołać to raz, w setupShaders, ale chodzi o pokazanie,
 	//że mozna zmieniać program cieniujący podczas rysowania jednej sceny
-	shaderProgram->use();
+
 
 	//Przekaż do shadera macierze P,V i M.
 	//W linijkach poniżej, polecenie:
@@ -374,44 +241,56 @@ int vertexCount=Models::CubeInternal::vertexCount;
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("c1"));
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("c2"));
     glDisableVertexAttribArray(shaderProgram->getAttribLocation("c3"));
-}
-*/
+}*/
+
 
 
 
 
 //Procedura rysująca zawartość sceny
-void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,ShaderProgram *shaderProgram) {
+void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,drzewo D, ShaderProgram *shaderProgram) {
 
 	//************Tutaj umieszczaj kod rysujący obraz******************l
-    shaderProgram->use();
 
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Wykonaj czyszczenie bufora kolorów i głębokości
 
 	glm::mat4 P = glm::perspective(50 * PI / 180, aspect, 1.0f, 50.0f); //Wylicz macierz rzutowania
 
 	glm::mat4 V = glm::lookAt( //Wylicz macierz widoku
-		glm::vec3(0.0f, 0.0f, -5.0f),
+		glm::vec3(0.0f, 0.0f, -15.0f),
 		glm::vec3(0.0f, 0.0f, 0.0f),
 		glm::vec3(0.0f, 1.0f, 0.0f));
 
+
+    //ziemia
+
+    /*mat4 Mz = mat4(1.0f);
+    Mz=rotate(Mz, -PI/90 ,vec3(1.0f,0.0f,0.0f)); //żeby na wejściu było ok
+    Mz=rotate(Mz,angle_x,vec3(1.0f,0.0f,0.0f));
+    Mz=rotate(Mz,angle_y,vec3(0.0f,1.0f,0.0f));*/
+
     mat4 M = mat4(1.0f);
-    M = translate(M, vec3(1,0,0));
+    M = translate(M, vec3(0,-2,1));
     M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
     M = rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
     M = rotate(M,angle_y,vec3(0.0f,0.0f,1.0f));
+    M = scale(M, vec3(0.5,0.5,4));
 
 
 
-    stozek.drawCone(P,V,M,shaderProgram,k_diffTex);
+    //stozek.drawCone(P,V,M,shaderProgram,k_diffTex);
+    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex);
 
-    mat4 M2 = mat4(1.0f);
-    M2 = translate(mat4(1.0f), vec3(-1,0,0));
-    M2 = rotate(M2,110*PI/180,vec3(-1.0f,0.0f,0.0f));
-    M2 = rotate(M2,angle_x,vec3(1.0f,0.0f,0.0f));
-    M2 = rotate(M2,angle_y,vec3(0.0f,0.0f,1.0f));
 
-    stozek.drawCone(P,V,M2,shaderProgram,k_diffTex);
+    //mat4 Mz_skalowane=scale(Mz, vec3(500.0f, 0.1f, 500.0f)); //musi byc
+   // (value_ptr(V*Mz_skalowane));
+    //glColor3d(0.0,0.7,0.0);
+	//Narysuj obiekt
+   // rysuj_Ziemie(shaderProgram,P,V,Mz_skalowane);
+   // D.rysuj_drzewo(P, Mz, V, wzrost, shaderProgram);
+
+
+    // pien
 
 	//Przerzuć tylny bufor na przedni
 	glfwSwapBuffers(window);
@@ -423,8 +302,8 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,Sh
 int main(void)
 {
 	GLFWwindow* window; //Wskaźnik na obiekt reprezentujący okno
-    //drzewo D = drzewo(k_diffTex,k_normalTex,k_heightTex );
-    //printf ("Wysokosc drzewa: %d \n", D.wysokosc_drzewa);
+    drzewo D = drzewo(k_diffTex);
+   printf ("Wysokosc drzewa: %d \n", D.wysokosc_drzewa);
 
 	glfwSetErrorCallback(error_callback);//Zarejestruj procedurę obsługi błędów
 
@@ -457,23 +336,21 @@ int main(void)
 
 	glfwSetTime(0); //Wyzeruj licznik czasu
 
-    //string path = "cone.obj";
-    //loadOBJ(path);
-
 	//Główna pętla
 	while (!glfwWindowShouldClose(window)) //Tak długo jak okno nie powinno zostać zamknięte
 	{
-		angle_x += speed_x*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
+		{angle_x += speed_x*glfwGetTime();} //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
 		angle_y += speed_y*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
 
 		glfwSetTime(0); //Wyzeruj licznik czasu
-		drawScene(window,angle_x,angle_y,wzrost,shaderProgram); //Wykonaj procedurę rysującą
+		drawScene(window,angle_x,angle_y,wzrost,D,shaderProgram); //Wykonaj procedurę rysującą
+
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
-/*
+
 		if (wzrost<=max_wysokosc_drzewa)
             {
              wzrost=wzrost+tempo_wzrostu;
-            }*/
+            }
 
 
 	}
