@@ -2,9 +2,86 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="src\drzewo.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3690" topLine="133" />
+		</Cursor>
+	</File>
+	<File name="include\cone.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="621" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="include\galaz.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="749" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="main_file.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11008" topLine="137" />
+		</Cursor>
+		<Folding>
+			<Collapse line="67" />
+			<Collapse line="73" />
+			<Collapse line="91" />
+			<Collapse line="101" />
+		</Folding>
+	</File>
+	<File name="fshader.glsl" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2228" topLine="13" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+		</Folding>
+	</File>
+	<File name="model.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="26" />
+		</Cursor>
+	</File>
 	<File name="shaderprogram.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2738" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="include\drzewo.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1061" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="cube.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="120" />
+		</Cursor>
+	</File>
+	<File name="model.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="986" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="21" />
+		</Folding>
+	</File>
+	<File name="shaderprogram.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1256" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="allmodels.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="915" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="cube.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1210" topLine="41" />
+		</Cursor>
+	</File>
+	<File name="src\cone.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="900" topLine="9" />
 		</Cursor>
 	</File>
 	<File name="src\galaz.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -19,86 +96,9 @@
 			<Collapse line="42" />
 		</Folding>
 	</File>
-	<File name="vshader.glsl" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="vshader.glsl" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="235" topLine="23" />
+			<Cursor1 position="1243" topLine="23" />
 		</Cursor>
-	</File>
-	<File name="shaderprogram.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1256" topLine="22" />
-		</Cursor>
-	</File>
-	<File name="fshader.glsl" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1279" topLine="12" />
-		</Cursor>
-		<Folding>
-			<Collapse line="12" />
-		</Folding>
-	</File>
-	<File name="include\galaz.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="749" topLine="6" />
-		</Cursor>
-	</File>
-	<File name="src\drzewo.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3690" topLine="142" />
-		</Cursor>
-	</File>
-	<File name="allmodels.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="915" topLine="11" />
-		</Cursor>
-	</File>
-	<File name="cube.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1210" topLine="41" />
-		</Cursor>
-	</File>
-	<File name="cube.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="120" />
-		</Cursor>
-	</File>
-	<File name="main_file.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="10883" topLine="116" />
-		</Cursor>
-		<Folding>
-			<Collapse line="67" />
-			<Collapse line="73" />
-			<Collapse line="91" />
-			<Collapse line="101" />
-		</Folding>
-	</File>
-	<File name="model.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="26" />
-		</Cursor>
-	</File>
-	<File name="src\cone.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="904" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="include\cone.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="621" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="include\drzewo.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1061" topLine="23" />
-		</Cursor>
-	</File>
-	<File name="model.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="-4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="986" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="21" />
-		</Folding>
 	</File>
 </CodeBlocks_layout_file>
