@@ -49,4 +49,3 @@ void main(void) {
 	gl_Position=P*V*M*vec4(vertex,1);
 }
 
-

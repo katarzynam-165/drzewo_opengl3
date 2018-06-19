@@ -33,6 +33,7 @@ Place, Fifth Floor, Boston, MA  02110 - 1301  USA
 #include "lodepng.h"
 #include "shaderprogram.h"
 #include "cone.h"
+#include "lisc.h"
 #include "drzewo.h"
 
 using namespace glm;
@@ -44,6 +45,7 @@ float max_wysokosc_drzewa=5;
 cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
+GLuint l_diffTex; //Zmienna reprezentujaca teksturę
 //GLuint k_normalTex; //Zmienna reprezentujaca teksturę
 //GLuint k_heightTex; //Zmienna reprezentująca teksturę
 
@@ -61,6 +63,124 @@ float aspect=1; //Stosunek szerokości do wysokości okna
 //Uchwyty na shadery
 ShaderProgram *shaderProgram; //Wskaźnik na obiekt reprezentujący program cieniujący.
 
+float* leaf_vertices;
+float* leaf_texCoords;
+float* leaf_normals;
+int leaf_vertexCount;
+
+void loadOBJ(string path){
+
+            vector <float> faceVertices, faceUVs, faceNormals;
+            vector <float> tmpVertices, tmpUVs, tmpNormals;
+
+            ifstream file(path.c_str(), ios::in);
+            string line;
+
+            while(getline(file, line)){
+
+                if(line.substr(0, 2) == "v "){
+
+                    istringstream sub(line.substr(2));
+                    float x, y, z;
+                    sub >> x;
+                    sub >> y;
+                    sub >> z;
+                    tmpVertices.push_back(x);
+                    tmpVertices.push_back(y);
+                    tmpVertices.push_back(z);
+
+                } else if(line.substr(0,3) == "vt "){
+
+                    istringstream sub(line.substr(3));
+                    float u, v;
+                    sub >> u;
+                    sub >> v;
+                    tmpUVs.push_back(u);
+                    tmpUVs.push_back(v);
+                } else if(line.substr(0,3) == "vn "){
+
+                    istringstream sub(line.substr(3));
+                    float x, y, z, w;
+                    sub >> x;
+                    sub >> y;
+                    sub >> z;
+                    tmpNormals.push_back(x);
+                    tmpNormals.push_back(y);
+                    tmpNormals.push_back(z);
+
+                } else if(line.substr(0, 2) == "f "){
+
+                    string sub = line.substr(2);
+                    char* dup = strdup(sub.c_str());
+                    char* token = strtok(dup, " ");
+                    while(token != NULL){
+                        istringstream info(token);
+                        vector <int> tokens;
+                        string data;
+                        int index;
+                        while(getline(info, data, '/')){
+                            index = atoi(data.c_str());
+                            index--;
+                            tokens.push_back(index);
+                        }
+                        faceVertices.push_back(tokens[0]);
+                        faceUVs.push_back(tokens[1]);
+                        faceNormals.push_back(tokens[2]);
+                        tokens.clear();
+                        token = strtok(NULL, " ");
+                    }
+                }
+            }
+
+
+            leaf_vertices = new float[faceVertices.size()*3];
+            leaf_texCoords = new float[faceUVs.size()*2];
+            leaf_normals = new float[faceNormals.size()*3];
+            leaf_vertexCount = faceVertices.size();
+
+            int index_out = 0;
+
+            for(int i = 0; i < faceVertices.size(); i++){
+                int vIndex = faceVertices[i]*3;
+                leaf_vertices[index_out] = tmpVertices[vIndex];
+
+                index_out++;
+                vIndex++;
+                leaf_vertices[index_out] = tmpVertices[vIndex];
+                index_out++;
+                vIndex++;
+                leaf_vertices[index_out] = tmpVertices[vIndex];
+                index_out++;
+                vIndex++;
+            }
+
+            index_out = 0;
+
+            for(int i = 0; i < faceUVs.size(); i++){
+                int uvIndex = faceUVs[i]*2;
+                leaf_texCoords[index_out] = tmpUVs[uvIndex];
+                index_out++;
+                uvIndex++;
+                leaf_texCoords[index_out] = tmpUVs[uvIndex];
+                index_out++;
+                uvIndex++;
+            }
+
+            index_out = 0;
+
+            for(int i = 0; i < faceNormals.size(); i++){
+                int nIndex = faceNormals[i]*3;
+                leaf_normals[index_out] = -tmpNormals[nIndex];
+                index_out++;
+                nIndex++;
+                leaf_normals[index_out] = -tmpNormals[nIndex];
+                index_out++;
+                nIndex++;
+                leaf_normals[index_out] = -tmpNormals[nIndex];
+                index_out++;
+                nIndex++;
+            }
+    }
 
 
 
@@ -134,6 +254,9 @@ void initOpenGLProgram(GLFWwindow* window) {
     shaderProgram->use();
 
 	k_diffTex=readTexture("kora_albedo.png");
+	l_diffTex=readTexture("Leaf.png");
+	loadOBJ("Leaf.obj");
+
 	//k_normalTex=readTexture("kora_normal.png");
     //k_heightTex=readTexture("kora_height.png");
     //z_diffTex=readTexture("ziemia_albedo.png");
@@ -147,6 +270,7 @@ void freeOpenGLProgram() {
 	delete shaderProgram; //Usunięcie programu cieniującego
 
 	glDeleteTextures(1,&k_diffTex);
+	glDeleteTextures(1,&l_diffTex);
 	//glDeleteTextures(1,&k_normalTex);
 	//glDeleteTextures(1,&k_heightTex);
     //glDeleteTextures(1,&z_diffTex);
@@ -257,7 +381,7 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
 	glm::mat4 P = glm::perspective(50 * PI / 180, aspect, 1.0f, 50.0f); //Wylicz macierz rzutowania
 
 	glm::mat4 V = glm::lookAt( //Wylicz macierz widoku
-		glm::vec3(0.0f, 0.0f, -15.0f),
+		glm::vec3(0.0f, 0.0f, -5.0f),
 		glm::vec3(0.0f, 0.0f, 0.0f),
 		glm::vec3(0.0f, 1.0f, 0.0f));
 
@@ -270,16 +394,26 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
     Mz=rotate(Mz,angle_y,vec3(0.0f,1.0f,0.0f));*/
 
     mat4 M = mat4(1.0f);
-    M = translate(M, vec3(0,-2,1));
+
     M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
     M = rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
     M = rotate(M,angle_y,vec3(0.0f,0.0f,1.0f));
-    M = scale(M, vec3(0.5,0.5,4));
+    //M = scale(M, vec3(0.5,0.5,4));
 
 
+    lisc leaf = lisc();
 
-    //stozek.drawCone(P,V,M,shaderProgram,k_diffTex);
-    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex);
+    //ta czesc moze pewnie byc ladniej napisana - musze pokminic
+    leaf.leaf_normals = leaf_normals;
+    leaf.leaf_texCoords = leaf_texCoords;
+    leaf.leaf_vertices = leaf_vertices;
+    leaf.vertexCount = leaf_vertexCount;
+
+    mat4 M_skalowane = scale(M, vec3(0.005,0.005,0.005));
+    leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
+
+    mat4 M2 = translate(M, vec3(0,-2,1));
+    D.rysuj_drzewo(P,V,M2,wzrost,shaderProgram,k_diffTex);
 
 
     //mat4 Mz_skalowane=scale(Mz, vec3(500.0f, 0.1f, 500.0f)); //musi byc

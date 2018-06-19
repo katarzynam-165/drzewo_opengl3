@@ -76,4 +76,3 @@ void main(void) {
 	pixelColor += ka*la+kd*ld*vec4(nl2,nl2,nl2,1)+ks*ls*vec4(rv2,rv2,rv2,0);
 }
 
-

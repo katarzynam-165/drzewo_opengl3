@@ -61,7 +61,7 @@ void cone::drawCone(mat4 P, mat4 V, mat4 M,ShaderProgram *shaderProgram, GLuint 
 
 namespace coneNamespace{
     float vertices[] ={
-        1,0,0,
+        1 ,0,0,
         0,0,1,
         0.996195,0.0871557,0,
         0.996195,0.0871557,0,
@@ -718,6 +718,8 @@ namespace coneNamespace{
 
     };
 }
+
+
 cone::~cone()
 {
     //dtor

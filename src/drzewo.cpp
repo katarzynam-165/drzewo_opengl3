@@ -102,6 +102,7 @@ void drzewo::rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tabli
     }
 
     mat4 M= mat4 (1.0);
+
     M = translate (M_Matki, vec3(0.0f,G.wys_galezi_na_matce*wys_matki/2,0.0f));
     M = rotate(M, G.kat_na_matce , glm::vec3(0.0f, 1.0f, 0.0f));
     M = rotate(M, G.kat_do_pionu, glm::vec3(1.0f, 0.0f, 0.0f));

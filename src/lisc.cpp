@@ -50,6 +50,7 @@ lisc::lisc()
      losuj_szer_liscia();
      losuj_typ_liscia();
      ustaw_teksture();
+
 }
 
 lisc::~lisc()

@@ -11,7 +11,6 @@ c.a<-c()
 for(j in 1:nrow(normalsy)){
   
   if(j%%3==1){
-    print(j)
   a.x<-verteksy[j,1]
   a.y<-verteksy[j,2]
   a.z<-verteksy[j,3]
@@ -41,10 +40,18 @@ for(j in 1:nrow(normalsy)){
   }
 }
 
-for(i in nrow(normalsy)){
+for(i in 1:nrow(normalsy)){
   normalsy[i,]<-normalize.vector(normalsy[i,])
 }
 #normalsy<- (normalsy-min(normalsy))/(max(normalsy)-min(normalsy))
+
+for(row in 1:nrow(normalsy))
+{
+  wiersz<-c(normalsy[row,1],normalsy[row,2],normalsy[row,3])
+  normalsy[row,]<-rev(wiersz)
+  
+}
+
 normalsy<-cbind(normalsy,c(rep(69,216)))
 normalsy<-cbind(normalsy,c(rep(69,216)))
 
