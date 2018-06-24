@@ -4,10 +4,21 @@
 #include "constants.h"
 #include <stdio.h>
 
-int min_dl_galezi=40;
-int max_dl_galezi=100; // przez 10
-int min_gr_galezi=1;
-int max_gr_galezi=10; //przez 10
+#include <iostream>
+#include "allmodels.h"
+#include "cube.h"
+#include "cone.h"
+#include "lisc.h"
+#include "shaderprogram.h"
+#include <math.h>
+
+using namespace glm;
+using namespace std;
+
+int min_dl_galezi=20;
+int max_dl_galezi=60; // przez 10
+int min_gr_galezi=1.5;
+int max_gr_galezi=2; //przez 10
 
 
 int galaz::losuj(int mini, int maxi)
@@ -17,22 +28,22 @@ int galaz::losuj(int mini, int maxi)
     };
 
 
-void galaz:: losuj_dlugosc_galezi()
+void galaz:: losuj_dlugosc_galezi(float dlugosc_matki)
     {
-    int r=losuj(min_dl_galezi,max_dl_galezi);
+    int r=losuj(min_dl_galezi,dlugosc_matki);
     dlugosc_galezi=float(r)/10;
     };
 
 
-void galaz:: losuj_grubosc_galezi()
+void galaz:: losuj_grubosc_galezi(float grubosc_matki)
    {
-    int r=losuj(min_gr_galezi,max_gr_galezi);
+    int r=losuj(min_gr_galezi, grubosc_matki);
     grubosc_galezi=float(r)/10;
     };
 
 void galaz:: losuj_wys_galezi_na_matce()
     {
-    int r=losuj(1,10);
+    int r=losuj(4,7);
     float temp=float(r)/10;
     wys_galezi_na_matce=temp;
     };
@@ -52,13 +63,30 @@ void galaz:: losuj_kat_do_pionu()
      kat_do_pionu=float(PI/r);
     };
 
-galaz::galaz()
+void galaz::ustaw(float dlugosc_matki, float grubosc_matki)
 {
-    losuj_dlugosc_galezi();
-    losuj_grubosc_galezi();
+    if (dlugosc_matki == 0)
+        losuj_dlugosc_galezi(max_dl_galezi);
+    else
+        losuj_dlugosc_galezi(dlugosc_matki*10);
+
+
+
+    if (grubosc_matki == 0)
+        losuj_grubosc_galezi(max_gr_galezi);
+    else
+        grubosc_galezi = grubosc_matki * 0.7;
+
+
+
+
     losuj_wys_galezi_na_matce();
     losuj_kat_na_matce();
     losuj_kat_do_pionu();
+}
+
+galaz::galaz()
+{
 }
 
 galaz::~galaz()

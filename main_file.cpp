@@ -41,7 +41,7 @@ using namespace std;
 
 float wzrost = 1;
 float tempo_wzrostu=0.02;
-float max_wysokosc_drzewa=5;
+float max_wysokosc_drzewa=10;
 cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
@@ -57,16 +57,20 @@ GLuint l_diffTex; //Zmienna reprezentujaca teksturę
 
 float speed_x = 0; // [radiany/s]
 float speed_y = 0; // [radiany/s]
+float speed_distance=0; //[radiany/s]
 
 float aspect=1; //Stosunek szerokości do wysokości okna
 
 //Uchwyty na shadery
 ShaderProgram *shaderProgram; //Wskaźnik na obiekt reprezentujący program cieniujący.
 
+
+//uchwyty na rzeczy w lisciu:
 float* leaf_vertices;
 float* leaf_texCoords;
 float* leaf_normals;
 int leaf_vertexCount;
+lisc leaf;
 
 void loadOBJ(string path){
 
@@ -100,7 +104,7 @@ void loadOBJ(string path){
                 } else if(line.substr(0,3) == "vn "){
 
                     istringstream sub(line.substr(3));
-                    float x, y, z, w;
+                    float x, y, z;
                     sub >> x;
                     sub >> y;
                     sub >> z;
@@ -197,6 +201,8 @@ void key_callback(GLFWwindow* window, int key,
 		if (key == GLFW_KEY_RIGHT) speed_y = 3.14;
 		if (key == GLFW_KEY_UP) speed_x = -3.14;
 		if (key == GLFW_KEY_DOWN) speed_x = 3.14;
+		if (key == GLFW_KEY_A) speed_distance = -3.14;
+		if (key == GLFW_KEY_Z) speed_distance = 3.14;
 	}
 
 
@@ -205,6 +211,8 @@ void key_callback(GLFWwindow* window, int key,
 		if (key == GLFW_KEY_RIGHT) speed_y = 0;
 		if (key == GLFW_KEY_UP) speed_x = 0;
 		if (key == GLFW_KEY_DOWN) speed_x = 0;
+		if (key == GLFW_KEY_A) speed_distance = 0;
+		if (key == GLFW_KEY_Z) speed_distance = 0;
 	}
 }
 
@@ -256,6 +264,13 @@ void initOpenGLProgram(GLFWwindow* window) {
 	k_diffTex=readTexture("kora_albedo.png");
 	l_diffTex=readTexture("Leaf.png");
 	loadOBJ("Leaf.obj");
+    leaf = lisc();
+
+    leaf.leaf_normals = leaf_normals;
+    leaf.leaf_texCoords = leaf_texCoords;
+    leaf.leaf_vertices = leaf_vertices;
+    leaf.vertexCount = leaf_vertexCount;
+
 
 	//k_normalTex=readTexture("kora_normal.png");
     //k_heightTex=readTexture("kora_height.png");
@@ -372,7 +387,7 @@ int vertexCount=Models::CubeInternal::vertexCount;
 
 
 //Procedura rysująca zawartość sceny
-void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,drzewo D, ShaderProgram *shaderProgram) {
+void drawScene(GLFWwindow* window, float angle_x, float angle_y,float distance, float wzrost,drzewo D, ShaderProgram *shaderProgram) {
 
 	//************Tutaj umieszczaj kod rysujący obraz******************l
 
@@ -381,8 +396,8 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
 	glm::mat4 P = glm::perspective(50 * PI / 180, aspect, 1.0f, 50.0f); //Wylicz macierz rzutowania
 
 	glm::mat4 V = glm::lookAt( //Wylicz macierz widoku
-		glm::vec3(0.0f, 0.0f, -5.0f),
-		glm::vec3(0.0f, 0.0f, 0.0f),
+		glm::vec3(0.0f, 0.0f, distance),
+		glm::vec3(0.0f, 4.0f, 0.0f),
 		glm::vec3(0.0f, 1.0f, 0.0f));
 
 
@@ -394,11 +409,16 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
     Mz=rotate(Mz,angle_y,vec3(0.0f,1.0f,0.0f));*/
 
     mat4 M = mat4(1.0f);
-
-    M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
     M = rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
-    M = rotate(M,angle_y,vec3(0.0f,0.0f,1.0f));
-    //M = scale(M, vec3(0.5,0.5,4));
+    M = rotate(M,angle_y,vec3(0.0f,1.0f,0.0f));
+
+    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex,l_diffTex, leaf);
+
+
+    /*
+  //  M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
+
+    //
 
 
     lisc leaf = lisc();
@@ -410,10 +430,10 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
     leaf.vertexCount = leaf_vertexCount;
 
     mat4 M_skalowane = scale(M, vec3(0.005,0.005,0.005));
-    leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
+  //  leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
 
-    mat4 M2 = translate(M, vec3(0,-2,1));
-    D.rysuj_drzewo(P,V,M2,wzrost,shaderProgram,k_diffTex);
+
+    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex);
 
 
     //mat4 Mz_skalowane=scale(Mz, vec3(500.0f, 0.1f, 500.0f)); //musi byc
@@ -425,7 +445,7 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
 
 
     // pien
-
+*/
 	//Przerzuć tylny bufor na przedni
 	glfwSwapBuffers(window);
 
@@ -435,9 +455,9 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y, float wzrost,dr
 
 int main(void)
 {
-	GLFWwindow* window; //Wskaźnik na obiekt reprezentujący okno
+    GLFWwindow* window; //Wskaźnik na obiekt reprezentujący okno
     drzewo D = drzewo(k_diffTex);
-   printf ("Wysokosc drzewa: %d \n", D.wysokosc_drzewa);
+    printf ("Wysokosc drzewa: %d \n", D.wysokosc_drzewa);
 
 	glfwSetErrorCallback(error_callback);//Zarejestruj procedurę obsługi błędów
 
@@ -446,7 +466,7 @@ int main(void)
 		exit(EXIT_FAILURE);
 	}
 
-	window = glfwCreateWindow(550, 550, "OpenGL", NULL, NULL);  //Utwórz okno 500x500 o tytule "OpenGL" i kontekst OpenGL.
+	window = glfwCreateWindow(700, 700, "OpenGL", NULL, NULL);  //Utwórz okno 500x500 o tytule "OpenGL" i kontekst OpenGL.
 
 	if (!window) //Jeżeli okna nie udało się utworzyć, to zamknij program
 	{
@@ -467,17 +487,24 @@ int main(void)
 
 	float angle_x = 0; //Kąt obrotu obiektu
 	float angle_y = 0; //Kąt obrotu obiektu
+    float distance = -15;
 
 	glfwSetTime(0); //Wyzeruj licznik czasu
 
 	//Główna pętla
 	while (!glfwWindowShouldClose(window)) //Tak długo jak okno nie powinno zostać zamknięte
-	{
-		{angle_x += speed_x*glfwGetTime();} //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
+        {
+		//RUCHY KAMERĄI WZROST DRZEWA
+		angle_x += speed_x*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
 		angle_y += speed_y*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
+        distance += speed_distance*glfwGetTime();
 
+        if (distance<=-30) {distance=-30;}
+        if (distance>=-5) {distance=-5;}
 		glfwSetTime(0); //Wyzeruj licznik czasu
-		drawScene(window,angle_x,angle_y,wzrost,D,shaderProgram); //Wykonaj procedurę rysującą
+
+
+		drawScene(window,angle_x,angle_y,distance, wzrost,D,shaderProgram); //Wykonaj procedurę rysującą
 
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
 

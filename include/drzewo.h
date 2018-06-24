@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include "allmodels.h"
 #include "cone.h"
+#include "lisc.h"
 #include "shaderprogram.h"
 
 using namespace glm;
@@ -30,17 +31,22 @@ private:
         drzewo(GLuint d);
         virtual ~drzewo();
         void losuj_wysokosc_drzewa();
-        int il_galezi=8; // w pierwszym pokoleniu
-        galaz galezie[32];
-        int wysokosc_drzewa;
-        int grubosc_drzewa;
+        int il_galezi = 2;
+        int il_galezi_w_pierwszym_pokoleniu = 4; // w pierwszym pokoleniu
+        int il_pokolen = 8;
+        int rozmiar = 1024;
+        galaz galezie[1024];
 
-        void rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tablicy, ShaderProgram *shaderProgram);
-        void rysuj_drzewo(mat4 P, mat4 Mz, mat4 V, float wzrost, ShaderProgram *shaderProgram,GLuint k_diffTex);
+        int wysokosc_drzewa;
+        float grubosc_drzewa=0.4;
+
+
+        int pobierz_numer_matki(int index);
+        void rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tablicy, ShaderProgram *shaderProgram, GLuint k_diffTex,GLuint l_diffTex, int numer_pokolenia, lisc leaf);
+        void rysuj_drzewo(mat4 P, mat4 Mz, mat4 V, float wzrost, ShaderProgram *shaderProgram,GLuint k_diffTex, GLuint l_diffTex, lisc leaf);
         int losuj(int mini, int maxi);
-        void rysuj_prostopadloscian(mat4 P, mat4 V, mat4 M, float a, float b, float c, ShaderProgram *shaderProgram);
         void losuj_nowe_pokolenie_galezi(int nr_pokolenia);
-        void rysuj_stozek(ShaderProgram *shaderProgram, mat4 mP, mat4 mV, mat4 mM);
+        void rysuj_stozek(mat4 P, mat4 V, mat4 M, float h, float r, ShaderProgram *shaderProgram, GLuint k_diffTex);
 };
 
 #endif // DRZEWO_H

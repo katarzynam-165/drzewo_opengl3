@@ -1349,19 +1349,19 @@
 
 1528219133 c:\users\katar\dysk google\!semestr vi\opengl\drzewo w ogl3 v1.2\drzewo w ogl3\include\lisc.h
 
-1528089028 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\cube.cpp
+1529422888 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\cube.cpp
 	"cube.h"
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\cube.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\cube.h
 	"model.h"
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\model.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\model.h
 	<vector>
 	<glm/glm.hpp>
 	<GLFW/glfw3.h>
 	"constants.h"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\glm.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\glm.hpp
 	"detail/_fixes.hpp"
 	"detail/setup.hpp"
 	<cmath>
@@ -1391,15 +1391,15 @@
 	"vector_relational.hpp"
 	"integer.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_fixes.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_fixes.hpp
 	<cmath>
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\setup.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\setup.hpp
 	<cassert>
 	<cstddef>
 	"../simd/platform.h"
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\platform.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\platform.h
 	<cuda.h>
 	<intrin.h>
 	<immintrin.h>
@@ -1411,88 +1411,88 @@
 	<pmmintrin.h>
 	<emmintrin.h>
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\fwd.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\fwd.hpp
 	"detail/setup.hpp"
 	"detail/type_int.hpp"
 	"detail/type_float.hpp"
 	"detail/type_vec.hpp"
 	"detail/type_mat.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_int.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_int.hpp
 	"setup.hpp"
 	<type_traits>
 	<cstdint>
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_float.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_float.hpp
 	"setup.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec.hpp
 	"qualifier.hpp"
 	"type_int.hpp"
 	"compute_vector_relational.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\qualifier.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\qualifier.hpp
 	"setup.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\compute_vector_relational.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\compute_vector_relational.hpp
 	"setup.hpp"
 	<cstring>
 	<limits>
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat.hpp
 	"qualifier.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec2.hpp
 	"detail/setup.hpp"
 	"detail/type_vec2.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec2.hpp
 	"type_vec.hpp"
 	"_swizzle.hpp"
 	"_swizzle_func.hpp"
 	<cstddef>
 	"type_vec2.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_swizzle.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_swizzle.hpp
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_swizzle_func.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_swizzle_func.hpp
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec2.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec2.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec3.hpp
 	"detail/setup.hpp"
 	"detail/type_vec3.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec3.hpp
 	"type_vec.hpp"
 	"_swizzle.hpp"
 	"_swizzle_func.hpp"
 	<cstddef>
 	"type_vec3.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec3.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec3.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vec4.hpp
 	"detail/setup.hpp"
 	"detail/type_vec4.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4.hpp
 	"type_vec.hpp"
 	"_swizzle.hpp"
 	"_swizzle_func.hpp"
 	<cstddef>
 	"type_vec4.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4.inl
 	"type_vec4_simd.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec4_simd.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x2.hpp
 	"detail/setup.hpp"
 	"detail/type_mat2x2.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x2.hpp
 	"../fwd.hpp"
 	"type_vec2.hpp"
 	"type_mat.hpp"
@@ -1500,10 +1500,10 @@
 	<cstddef>
 	"type_mat2x2.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x2.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x2.inl
 	"../matrix.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\matrix.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\matrix.hpp
 	"detail/qualifier.hpp"
 	"detail/setup.hpp"
 	"detail/type_mat.hpp"
@@ -1521,11 +1521,11 @@
 	"mat4x4.hpp"
 	"detail/func_matrix.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x3.hpp
 	"detail/setup.hpp"
 	"detail/type_mat2x3.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x3.hpp
 	"../fwd.hpp"
 	"type_vec2.hpp"
 	"type_vec3.hpp"
@@ -1534,13 +1534,13 @@
 	<cstddef>
 	"type_mat2x3.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x3.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x3.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat2x4.hpp
 	"detail/setup.hpp"
 	"detail/type_mat2x4.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x4.hpp
 	"../fwd.hpp"
 	"type_vec2.hpp"
 	"type_vec4.hpp"
@@ -1549,13 +1549,13 @@
 	<cstddef>
 	"type_mat2x4.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x4.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat2x4.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x2.hpp
 	"detail/setup.hpp"
 	"detail/type_mat3x2.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x2.hpp
 	"../fwd.hpp"
 	"type_vec2.hpp"
 	"type_vec3.hpp"
@@ -1564,13 +1564,13 @@
 	<cstddef>
 	"type_mat3x2.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x2.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x2.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x3.hpp
 	"detail/setup.hpp"
 	"detail/type_mat3x3.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x3.hpp
 	"../fwd.hpp"
 	"type_vec3.hpp"
 	"type_mat.hpp"
@@ -1578,14 +1578,14 @@
 	<cstddef>
 	"type_mat3x3.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x3.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x3.inl
 	"../matrix.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat3x4.hpp
 	"detail/setup.hpp"
 	"detail/type_mat3x4.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x4.hpp
 	"../fwd.hpp"
 	"type_vec3.hpp"
 	"type_vec4.hpp"
@@ -1594,13 +1594,13 @@
 	<cstddef>
 	"type_mat3x4.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x4.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat3x4.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x2.hpp
 	"detail/setup.hpp"
 	"detail/type_mat4x2.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x2.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x2.hpp
 	"../fwd.hpp"
 	"type_vec2.hpp"
 	"type_vec4.hpp"
@@ -1609,13 +1609,13 @@
 	<cstddef>
 	"type_mat4x2.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x2.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x2.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x3.hpp
 	"detail/setup.hpp"
 	"detail/type_mat4x3.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x3.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x3.hpp
 	"../fwd.hpp"
 	"type_vec3.hpp"
 	"type_vec4.hpp"
@@ -1624,13 +1624,13 @@
 	<cstddef>
 	"type_mat4x3.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x3.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x3.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\mat4x4.hpp
 	"detail/setup.hpp"
 	"detail/type_mat4x4.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4.hpp
 	"../fwd.hpp"
 	"type_vec4.hpp"
 	"type_mat.hpp"
@@ -1638,22 +1638,22 @@
 	<cstddef>
 	"type_mat4x4.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4.inl
 	"../matrix.hpp"
 	"type_mat4x4_simd.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_mat4x4_simd.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_matrix.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_matrix.inl
 	"../geometric.hpp"
 	<limits>
 	"func_matrix_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\geometric.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\geometric.hpp
 	"detail/type_vec3.hpp"
 	"detail/func_geometric.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_geometric.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_geometric.inl
 	"../exponential.hpp"
 	"../common.hpp"
 	"type_vec2.hpp"
@@ -1661,7 +1661,7 @@
 	"type_float.hpp"
 	"func_geometric_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\exponential.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\exponential.hpp
 	"detail/type_vec1.hpp"
 	"detail/type_vec2.hpp"
 	"detail/type_vec3.hpp"
@@ -1669,9 +1669,9 @@
 	<cmath>
 	"detail/func_exponential.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec1.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec1.hpp
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_exponential.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_exponential.inl
 	"../vector_relational.hpp"
 	"_vectorize.hpp"
 	<limits>
@@ -1679,37 +1679,37 @@
 	<cassert>
 	"func_exponential_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vector_relational.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\vector_relational.hpp
 	"detail/qualifier.hpp"
 	"detail/setup.hpp"
 	"detail/func_vector_relational.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_vector_relational.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_vector_relational.inl
 	"compute_vector_relational.hpp"
 	"func_vector_relational_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_vector_relational_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_vector_relational_simd.inl
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_vectorize.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\_vectorize.hpp
 	"type_vec1.hpp"
 	"type_vec2.hpp"
 	"type_vec3.hpp"
 	"type_vec4.hpp"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_exponential_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_exponential_simd.inl
 	"../simd/exponential.h"
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\exponential.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\exponential.h
 	"platform.h"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\common.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\common.hpp
 	"detail/setup.hpp"
 	"detail/qualifier.hpp"
 	"detail/type_int.hpp"
 	"detail/_fixes.hpp"
 	"detail/func_common.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_common.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_common.inl
 	"../vector_relational.hpp"
 	"type_vec2.hpp"
 	"type_vec3.hpp"
@@ -1718,68 +1718,68 @@
 	<limits>
 	"func_common_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_common_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_common_simd.inl
 	"../simd/common.h"
 	<immintrin.h>
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\common.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\common.h
 	"platform.h"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_geometric_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_geometric_simd.inl
 	"../simd/geometric.h"
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\geometric.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\geometric.h
 	"common.h"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_matrix_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_matrix_simd.inl
 	"type_mat4x4.hpp"
 	"../geometric.hpp"
 	"../simd/matrix.h"
 	<cstring>
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\matrix.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\matrix.h
 	"geometric.h"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\trigonometric.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\trigonometric.hpp
 	"detail/setup.hpp"
 	"detail/qualifier.hpp"
 	"detail/func_trigonometric.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_trigonometric.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_trigonometric.inl
 	"_vectorize.hpp"
 	<cmath>
 	<limits>
 	"func_trigonometric_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_trigonometric_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_trigonometric_simd.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\packing.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\packing.hpp
 	"detail/type_vec2.hpp"
 	"detail/type_vec4.hpp"
 	"detail/func_packing.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_packing.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_packing.inl
 	"../common.hpp"
 	"type_half.hpp"
 	"../fwd.hpp"
 	"func_packing_simd.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_half.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_half.hpp
 	"setup.hpp"
 	"type_half.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_half.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_half.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_packing_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_packing_simd.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\integer.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\integer.hpp
 	"detail/setup.hpp"
 	"detail/qualifier.hpp"
 	"common.hpp"
 	"vector_relational.hpp"
 	"detail/func_integer.inl"
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_integer.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_integer.inl
 	"../ext/vec1.hpp"
 	"type_vec2.hpp"
 	"type_vec3.hpp"
@@ -1790,7 +1790,7 @@
 	<limits>
 	"func_integer_simd.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\ext\vec1.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\ext\vec1.hpp
 	"../fwd.hpp"
 	"../detail/type_vec.hpp"
 	"../detail/_swizzle.hpp"
@@ -1798,14 +1798,14 @@
 	<cstddef>
 	"../detail/type_vec1.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec1.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\type_vec1.inl
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_integer_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\detail\func_integer_simd.inl
 	"../simd/integer.h"
 
-1528089036 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\integer.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\simd\integer.h
 
-1528089030 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glfw\include\glfw\glfw3.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glfw\include\glfw\glfw3.h
 	<stddef.h>
 	<stdint.h>
 	<OpenGL/gl3.h>
@@ -1826,15 +1826,15 @@
 	<GL/glext.h>
 	<GL/glu.h>
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\constants.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\constants.h
 
-1528089028 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\lodepng.cpp
+1529422888 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\lodepng.cpp
 	"lodepng.h"
 	<stdio.h>
 	<stdlib.h>
 	<fstream>
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\lodepng.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\lodepng.h
 	<string.h>
 	<vector>
 	<string>
@@ -1842,7 +1842,11 @@
 	<iostream>
 	"lodepng.h"
 
-1529454809 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
+1529808788 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
+	"include/drzewo.h"
+	<cstdlib>
+	<time.h>
+	"constants.h"
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -1851,15 +1855,14 @@
 	<stdlib.h>
 	<stdio.h>
 	<iostream>
-	"constants.h"
 	"allmodels.h"
-	"lodepng.h"
-	"shaderprogram.h"
+	"cube.h"
 	"cone.h"
 	"lisc.h"
-	"drzewo.h"
+	"shaderprogram.h"
+	<math.h>
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glew\include\gl\glew.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glew\include\gl\glew.h
 	<stddef.h>
 	<inttypes.h>
 	<stdint.h>
@@ -1868,7 +1871,7 @@
 	<OpenGL/glu.h>
 	<GL/glu.h>
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\type_ptr.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\type_ptr.hpp
 	"../gtc/quaternion.hpp"
 	"../gtc/vec1.hpp"
 	"../vec2.hpp"
@@ -1886,7 +1889,7 @@
 	<cstring>
 	"type_ptr.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion.hpp
 	"../mat3x3.hpp"
 	"../mat4x4.hpp"
 	"../vec3.hpp"
@@ -1894,14 +1897,14 @@
 	"../gtc/constants.hpp"
 	"quaternion.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\constants.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\constants.hpp
 	"../detail/setup.hpp"
 	"constants.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\constants.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\constants.inl
 	<limits>
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion.inl
 	"../trigonometric.hpp"
 	"../geometric.hpp"
 	"../exponential.hpp"
@@ -1910,29 +1913,29 @@
 	<limits>
 	"quaternion_simd.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\epsilon.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\epsilon.hpp
 	"../detail/setup.hpp"
 	"../detail/qualifier.hpp"
 	"epsilon.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\epsilon.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\epsilon.inl
 	"quaternion.hpp"
 	"../vector_relational.hpp"
 	"../common.hpp"
 	"../detail/type_vec.hpp"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion_simd.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\quaternion_simd.inl
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\vec1.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\vec1.hpp
 	"../ext/vec1.hpp"
 	"vec1.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\vec1.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\vec1.inl
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\type_ptr.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\type_ptr.inl
 	<cstring>
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\matrix_transform.hpp
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\matrix_transform.hpp
 	"../mat4x4.hpp"
 	"../vec2.hpp"
 	"../vec3.hpp"
@@ -1940,23 +1943,743 @@
 	"../gtc/constants.hpp"
 	"matrix_transform.inl"
 
-1528089032 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\matrix_transform.inl
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glm\gtc\matrix_transform.inl
 	"../geometric.hpp"
 	"../trigonometric.hpp"
 	"../matrix.hpp"
 
-1528218779 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\allmodels.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\allmodels.h
 	"cube.h"
 
-1528089028 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\shaderprogram.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\shaderprogram.h
 	"GL/glew.h"
 	"stdio.h"
 
-1529241522 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\cone.h
+1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\cone.h
 	"shaderprogram.h"
 	<glm/gtc/matrix_transform.hpp>
 
-1529247105 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\drzewo.h
+1529808572 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\drzewo.h
+	<list>
+	"galaz.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"allmodels.h"
+	"cone.h"
+	"lisc.h"
+	"shaderprogram.h"
+
+1529801323 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\galaz.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdio.h>
+	<lodepng.h>
+
+1529422888 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\model.cpp
+	"model.h"
+
+1529422888 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\shaderprogram.cpp
+	"shaderprogram.h"
+
+1529611543 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\cone.cpp
+	"include/cone.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.h"
+	<iostream>
+
+1529808861 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\drzewo.cpp
+	"include/drzewo.h"
+	<cstdlib>
+	<time.h>
+	"constants.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"allmodels.h"
+	"cube.h"
+	"cone.h"
+	"lisc.h"
+	"shaderprogram.h"
+	<math.h>
+
+1529803622 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\galaz.cpp
+	"galaz.h"
+	<cstdlib>
+	<time.h>
+	"constants.h"
+	<stdio.h>
+	<iostream>
+	"allmodels.h"
+	"cube.h"
+	"cone.h"
+	"lisc.h"
+	"shaderprogram.h"
+	<math.h>
+
+1529792955 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\lisc.cpp
+	"lisc.h"
+	<cstdlib>
+	<time.h>
+
+1529792955 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\lisc.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<cstdlib>
+	<iostream>
+	<string>
+	<vector>
+	<ios>
+	<fstream>
+	<sstream>
+	<cstring>
+	"shaderprogram.h"
+
+1529422888 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\cube.cpp
+	"cube.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\cube.h
+	"model.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_fixes.hpp
+	<cmath>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_swizzle.hpp
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_swizzle_func.hpp
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec2.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec3.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x3.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x4.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x2.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x4.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x2.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x3.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec1.hpp
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_vector_relational_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\exponential.h
+	"platform.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\common.h
+	"platform.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\geometric.h
+	"common.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\matrix.h
+	"geometric.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_trigonometric_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_half.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_packing_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec1.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\simd\integer.h
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\constants.h
+
+1529422888 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1529611891 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"constants.h"
+	"allmodels.h"
+	"lodepng.h"
+	"shaderprogram.h"
+	"cone.h"
+	"lisc.h"
+	"drzewo.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\constants.inl
+	<limits>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion_simd.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\vec1.inl
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\type_ptr.inl
+	<cstring>
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\allmodels.h
+	"cube.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\shaderprogram.h
+	"GL/glew.h"
+	"stdio.h"
+
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\include\cone.h
+	"shaderprogram.h"
+	<glm/gtc/matrix_transform.hpp>
+
+1529598988 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\include\lisc.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<cstdlib>
+	<iostream>
+	<string>
+	<vector>
+	<ios>
+	<fstream>
+	<sstream>
+	<cstring>
+	"shaderprogram.h"
+
+1529605996 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\include\drzewo.h
 	<list>
 	"galaz.h"
 	<GL/glew.h>
@@ -1970,7 +2693,7 @@
 	"cone.h"
 	"shaderprogram.h"
 
-1528219133 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\galaz.h
+1529422888 c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\include\galaz.h
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -1979,13 +2702,13 @@
 	<stdio.h>
 	<lodepng.h>
 
-1528089028 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\model.cpp
+1529422888 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\model.cpp
 	"model.h"
 
-1528089028 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\shaderprogram.cpp
+1529422888 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\shaderprogram.cpp
 	"shaderprogram.h"
 
-1529453243 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\cone.cpp
+1529611543 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\src\cone.cpp
 	"include/cone.h"
 	<GL/glew.h>
 	<GLFW/glfw3.h>
@@ -1997,7 +2720,7 @@
 	"shaderprogram.h"
 	<iostream>
 
-1529441734 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\drzewo.cpp
+1529612218 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\src\drzewo.cpp
 	"include/drzewo.h"
 	<cstdlib>
 	<time.h>
@@ -2015,19 +2738,680 @@
 	"cone.h"
 	"shaderprogram.h"
 
-1529086161 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\galaz.cpp
+1529612257 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\src\galaz.cpp
 	"galaz.h"
 	<cstdlib>
 	<time.h>
 	"constants.h"
 	<stdio.h>
 
-1529453858 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\lisc.cpp
+1529598988 source:c:\users\kania\desktop\drzewo z liœciem\drzewo_opengl3-master\src\lisc.cpp
 	"lisc.h"
 	<cstdlib>
 	<time.h>
 
-1529454958 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\lisc.h
+1529422888 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\cube.cpp
+	"cube.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\cube.h
+	"model.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\glm.hpp
+	"detail/_fixes.hpp"
+	"detail/setup.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_fixes.hpp
+	<cmath>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\fwd.hpp
+	"detail/setup.hpp"
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec.hpp
+	"qualifier.hpp"
+	"type_int.hpp"
+	"compute_vector_relational.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\qualifier.hpp
+	"setup.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\compute_vector_relational.hpp
+	"setup.hpp"
+	<cstring>
+	<limits>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat.hpp
+	"qualifier.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\vec2.hpp
+	"detail/setup.hpp"
+	"detail/type_vec2.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_swizzle.hpp
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_swizzle_func.hpp
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec2.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\vec3.hpp
+	"detail/setup.hpp"
+	"detail/type_vec3.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec3.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\vec4.hpp
+	"detail/setup.hpp"
+	"detail/type_vec4.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec4_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x2.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x2.inl
+	"../matrix.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\matrix.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/type_mat.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"detail/func_matrix.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x3.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x3.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat2x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat2x4.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat2x4.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x2.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x2.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x3.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x3.inl
+	"../matrix.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat3x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat3x4.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat3x4.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x2.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x2.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x2.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x3.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x3.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x3.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\mat4x4.hpp
+	"detail/setup.hpp"
+	"detail/type_mat4x4.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4.inl
+	"../matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_mat4x4_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\geometric.hpp
+	"detail/type_vec3.hpp"
+	"detail/func_geometric.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_geometric.inl
+	"../exponential.hpp"
+	"../common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\exponential.hpp
+	"detail/type_vec1.hpp"
+	"detail/type_vec2.hpp"
+	"detail/type_vec3.hpp"
+	"detail/type_vec4.hpp"
+	<cmath>
+	"detail/func_exponential.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec1.hpp
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_exponential.inl
+	"../vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\vector_relational.hpp
+	"detail/qualifier.hpp"
+	"detail/setup.hpp"
+	"detail/func_vector_relational.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_vector_relational.inl
+	"compute_vector_relational.hpp"
+	"func_vector_relational_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_vector_relational_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\exponential.h
+	"platform.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\common.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/type_int.hpp"
+	"detail/_fixes.hpp"
+	"detail/func_common.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_common.inl
+	"../vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\common.h
+	"platform.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\geometric.h
+	"common.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"../geometric.hpp"
+	"../simd/matrix.h"
+	<cstring>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\matrix.h
+	"geometric.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\trigonometric.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"detail/func_trigonometric.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_trigonometric_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\packing.hpp
+	"detail/type_vec2.hpp"
+	"detail/type_vec4.hpp"
+	"detail/func_packing.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_packing.inl
+	"../common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_half.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_packing_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\integer.hpp
+	"detail/setup.hpp"
+	"detail/qualifier.hpp"
+	"common.hpp"
+	"vector_relational.hpp"
+	"detail/func_integer.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_integer.inl
+	"../ext/vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\ext\vec1.hpp
+	"../fwd.hpp"
+	"../detail/type_vec.hpp"
+	"../detail/_swizzle.hpp"
+	"../detail/_swizzle_func.hpp"
+	<cstddef>
+	"../detail/type_vec1.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\type_vec1.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\simd\integer.h
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\constants.h
+
+1529422888 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1529422888 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\model.cpp
+	"model.h"
+
+1529422888 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\shaderprogram.cpp
+	"shaderprogram.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\shaderprogram.h
+	"GL/glew.h"
+	"stdio.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1529611543 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\src\cone.cpp
+	"include/cone.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"shaderprogram.h"
+	<iostream>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\include\cone.h
+	"shaderprogram.h"
+	<glm/gtc/matrix_transform.hpp>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\constants.inl
+	<limits>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	"../detail/compute_vector_relational.hpp"
+	"epsilon.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/qualifier.hpp"
+	"epsilon.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../detail/type_vec.hpp"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\quaternion_simd.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\vec1.hpp
+	"../ext/vec1.hpp"
+	"vec1.inl"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\vec1.inl
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\glm\gtc\type_ptr.inl
+	<cstring>
+
+1529612218 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\src\drzewo.cpp
+	"include/drzewo.h"
+	<cstdlib>
+	<time.h>
+	"constants.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"allmodels.h"
+	"cube.h"
+	"cone.h"
+	"shaderprogram.h"
+
+1529605996 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\include\drzewo.h
+	<list>
+	"galaz.h"
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	"allmodels.h"
+	"cone.h"
+	"shaderprogram.h"
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\include\galaz.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdio.h>
+	<lodepng.h>
+
+1529422888 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\allmodels.h
+	"cube.h"
+
+1529612257 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\src\galaz.cpp
+	"galaz.h"
+	<cstdlib>
+	<time.h>
+	"constants.h"
+	<stdio.h>
+
+1529598988 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\src\lisc.cpp
+	"lisc.h"
+	<cstdlib>
+	<time.h>
+
+1529598988 c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\include\lisc.h
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -2042,4 +3426,21 @@
 	<sstream>
 	<cstring>
 	"shaderprogram.h"
+
+1529784033 source:c:\users\katar\downloads\drzewo z liœciem 21.06\drzewo z liœciem\drzewo_opengl3-master\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"constants.h"
+	"allmodels.h"
+	"lodepng.h"
+	"shaderprogram.h"
+	"cone.h"
+	"lisc.h"
+	"drzewo.h"
 

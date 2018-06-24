@@ -19,12 +19,14 @@ class galaz
     public:
         galaz();
         virtual ~galaz();
+        void ustaw(float dlugosc_matki, float grubosc_matki);
         int losuj(int mini, int maxi);
-        void losuj_dlugosc_galezi();
-        void losuj_grubosc_galezi();
+        void losuj_dlugosc_galezi(float dlugosc_matki);
+        void losuj_grubosc_galezi(float grubosc_matki);
         void losuj_wys_galezi_na_matce();
         void losuj_kat_na_matce();
         void losuj_kat_do_pionu();
+        int pokolenie;
         float kat_do_pionu;
         float dlugosc_galezi;
         float wys_galezi_na_matce;

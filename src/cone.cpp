@@ -34,7 +34,7 @@ void cone::drawCone(mat4 P, mat4 V, mat4 M,ShaderProgram *shaderProgram, GLuint 
 	glUniformMatrix4fv(shaderProgram->getUniformLocation("M"),1, false, glm::value_ptr(M));
 
 	glUniform4f(shaderProgram->getUniformLocation("lp1"), 0, 0, -6, 1);
-	glUniform4f(shaderProgram->getUniformLocation("lp2"), 0, 11, 0, 1);
+	glUniform4f(shaderProgram->getUniformLocation("lp2"), 0, 30, 0, 1);
 
 	glUniform1i(shaderProgram->getUniformLocation("diffuseMap"),0);
 
