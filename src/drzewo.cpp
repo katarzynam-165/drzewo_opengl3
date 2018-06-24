@@ -100,6 +100,23 @@ void drzewo:: rysuj_stozek(mat4 P, mat4 V, mat4 M, float h, float r, ShaderProgr
     stozek.drawCone(P,V,Mk,shaderProgram,k_diffTex);
 }
 
+void drzewo::rysuj_lisc(mat4 M, mat4 P, mat4 V, ShaderProgram *shaderProgram, GLuint l_diffTex, lisc leaf, float dlugosc_galezi)
+{
+    mat4 M1 = M;
+    M1 = translate(M1, vec3(0,0.4*dlugosc_galezi,0.3));
+    M1 = rotate(M1,110 * PI / 180, vec3(-1,0,0));
+    mat4 M_skalowane = scale(M1, vec3(0.002,0.002,0.002));
+    leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
+
+    mat4 M2 = M;
+    M2 = translate(M2, vec3(0,0.2*dlugosc_galezi,0.2));
+    M2 = rotate(M2,40 * PI / 180, vec3(-1,0,0));
+    M_skalowane = scale(M2, vec3(0.0001,0.0001,0.0001));
+    leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
+
+}
+
+
 void drzewo::rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tablicy, ShaderProgram *shaderProgram, GLuint k_diffTex, GLuint l_diffTex, int numer_pokolenia, lisc leaf)
 {
 
@@ -135,11 +152,7 @@ void drzewo::rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tabli
  //   M = translate (M, vec3(0.0f, (G.dlugosc_galezi/2), 0.0f));
     galezie[numer_galezi_w_tablicy].macierz_wlasna=M;
     rysuj_stozek(P, V, M, G.dlugosc_galezi, G.grubosc_galezi, shaderProgram, k_diffTex);
-
-    mat4 M_skalowane = scale(M, vec3(0.005,0.005,0.005));
-    leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
-
-
+    rysuj_lisc(M, P, V, shaderProgram, l_diffTex, leaf, G.dlugosc_galezi);
 }
 
 void drzewo::losuj_nowe_pokolenie_galezi(int nr_pokolenia)
@@ -197,7 +210,7 @@ void drzewo::rysuj_drzewo(mat4 P, mat4 V, mat4 M, float wzrost, ShaderProgram *s
         rysuj_galaz (P, V, wzrost, i, shaderProgram, k_diffTex, l_diffTex, 0, leaf);
     }
 
-     for (i=il_galezi_w_pierwszym_pokoleniu;i<il_galezi*il_galezi_w_pierwszym_pokoleniu+il_galezi_w_pierwszym_pokoleniu;i++)
+    for (i=il_galezi_w_pierwszym_pokoleniu;i<il_galezi*il_galezi_w_pierwszym_pokoleniu+il_galezi_w_pierwszym_pokoleniu;i++)
     {
         //cout <<"1: " <<i<<"\t"<< int(floor((i/2) - 2)) << endl;
 

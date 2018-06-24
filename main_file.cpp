@@ -41,7 +41,7 @@ using namespace std;
 
 float wzrost = 1;
 float tempo_wzrostu=0.02;
-float max_wysokosc_drzewa=10;
+float max_wysokosc_drzewa=1;
 cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
@@ -252,6 +252,7 @@ GLuint readTexture(char* filename) {
 
 //Procedura inicjująca
 void initOpenGLProgram(GLFWwindow* window) {
+
 	//************Tutaj umieszczaj kod, który należy wykonać raz, na początku programu************
 	glClearColor(0, 0, 0, 1); //Czyść ekran na czarno
 	glEnable(GL_DEPTH_TEST); //Włącz używanie Z-Bufora

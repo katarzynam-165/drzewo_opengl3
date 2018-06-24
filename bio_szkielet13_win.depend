@@ -1842,11 +1842,7 @@
 	<iostream>
 	"lodepng.h"
 
-1529808788 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
-	"include/drzewo.h"
-	<cstdlib>
-	<time.h>
-	"constants.h"
+1529810832 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\main_file.cpp
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -1855,12 +1851,13 @@
 	<stdlib.h>
 	<stdio.h>
 	<iostream>
+	"constants.h"
 	"allmodels.h"
-	"cube.h"
+	"lodepng.h"
+	"shaderprogram.h"
 	"cone.h"
 	"lisc.h"
-	"shaderprogram.h"
-	<math.h>
+	"drzewo.h"
 
 1529422888 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\glew\include\gl\glew.h
 	<stddef.h>
@@ -1959,7 +1956,7 @@
 	"shaderprogram.h"
 	<glm/gtc/matrix_transform.hpp>
 
-1529808572 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\drzewo.h
+1529810301 c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\include\drzewo.h
 	<list>
 	"galaz.h"
 	<GL/glew.h>
@@ -2001,7 +1998,7 @@
 	"shaderprogram.h"
 	<iostream>
 
-1529808861 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\drzewo.cpp
+1529809578 source:c:\users\katar\dysk google\!semestr vi\opengl\drzewo_opengl3\src\drzewo.cpp
 	"include/drzewo.h"
 	<cstdlib>
 	<time.h>

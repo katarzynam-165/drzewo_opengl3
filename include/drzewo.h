@@ -41,8 +41,10 @@ private:
         float grubosc_drzewa=0.4;
 
 
+
         int pobierz_numer_matki(int index);
         void rysuj_galaz(mat4 P, mat4 V, float wzrost,  int numer_galezi_w_tablicy, ShaderProgram *shaderProgram, GLuint k_diffTex,GLuint l_diffTex, int numer_pokolenia, lisc leaf);
+        void rysuj_lisc(mat4 M, mat4 P, mat4 V, ShaderProgram *shaderProgram, GLuint l_diffTex, lisc leaf, float dlugosc_galezi);
         void rysuj_drzewo(mat4 P, mat4 Mz, mat4 V, float wzrost, ShaderProgram *shaderProgram,GLuint k_diffTex, GLuint l_diffTex, lisc leaf);
         int losuj(int mini, int maxi);
         void losuj_nowe_pokolenie_galezi(int nr_pokolenia);
