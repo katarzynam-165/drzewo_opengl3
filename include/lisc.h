@@ -42,7 +42,7 @@ class lisc
         void losuj_wys_liscia();
         void losuj_szer_liscia();
         void losuj_typ_liscia();
-        void ustaw_teksture();
+
         int losuj (int mini, int maxi);
 
         void drawLeaf(mat4 P, mat4 V, mat4 M,ShaderProgram *shaderProgram, GLuint l_diffTex){

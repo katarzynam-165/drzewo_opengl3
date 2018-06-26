@@ -39,19 +39,15 @@ Place, Fifth Floor, Boston, MA  02110 - 1301  USA
 using namespace glm;
 using namespace std;
 
-float wzrost = 1;
-float tempo_wzrostu=0.02;
+float wzrost = 0.5;
+float tempo_wzrostu=0.005;
 float max_wysokosc_drzewa=1;
 cone stozek = cone();
 
 GLuint k_diffTex; //Zmienna reprezentujaca teksturę
 GLuint l_diffTex; //Zmienna reprezentujaca teksturę
-//GLuint k_normalTex; //Zmienna reprezentujaca teksturę
-//GLuint k_heightTex; //Zmienna reprezentująca teksturę
-
-//GLuint z_diffTex; //Zmienna reprezentujaca teksturę
-//GLuint z_normalTex; //Zmienna reprezentujaca teksturę
-//GLuint z_heightTex; //Zmienna reprezentująca teksturę
+GLuint l2_diffTex; //Zmienna reprezentujaca teksturę
+GLuint z_diffTex;
 
 
 
@@ -186,8 +182,6 @@ void loadOBJ(string path){
             }
     }
 
-
-
 //Procedura obsługi błędów
 void error_callback(int error, const char* description) {
 	fputs(description, stderr);
@@ -197,10 +191,10 @@ void error_callback(int error, const char* description) {
 void key_callback(GLFWwindow* window, int key,
 	int scancode, int action, int mods) {
 	if (action == GLFW_PRESS) {
-		if (key == GLFW_KEY_LEFT) speed_y = -3.14;
-		if (key == GLFW_KEY_RIGHT) speed_y = 3.14;
-		if (key == GLFW_KEY_UP) speed_x = -3.14;
-		if (key == GLFW_KEY_DOWN) speed_x = 3.14;
+		if (key == GLFW_KEY_LEFT) speed_y = -1.14;
+		if (key == GLFW_KEY_RIGHT) speed_y = 1.14;
+		if (key == GLFW_KEY_UP) speed_x = -1.14;
+		if (key == GLFW_KEY_DOWN) speed_x = 1.14;
 		if (key == GLFW_KEY_A) speed_distance = -3.14;
 		if (key == GLFW_KEY_Z) speed_distance = 3.14;
 	}
@@ -226,7 +220,7 @@ void windowResize(GLFWwindow* window, int width, int height) {
     }
 }
 
-
+// czytanie tekstur
 GLuint readTexture(char* filename) {
   GLuint tex;
   glActiveTexture(GL_TEXTURE0);
@@ -264,6 +258,8 @@ void initOpenGLProgram(GLFWwindow* window) {
 
 	k_diffTex=readTexture("kora_albedo.png");
 	l_diffTex=readTexture("Leaf.png");
+	l2_diffTex=readTexture("leaf2.png");
+	z_diffTex=readTexture("ziemia.png");
 	loadOBJ("Leaf.obj");
     leaf = lisc();
 
@@ -271,13 +267,6 @@ void initOpenGLProgram(GLFWwindow* window) {
     leaf.leaf_texCoords = leaf_texCoords;
     leaf.leaf_vertices = leaf_vertices;
     leaf.vertexCount = leaf_vertexCount;
-
-
-	//k_normalTex=readTexture("kora_normal.png");
-    //k_heightTex=readTexture("kora_height.png");
-    //z_diffTex=readTexture("ziemia_albedo.png");
-	//z_normalTex=readTexture("ziemia_normal.png");
-    //z_heightTex=readTexture("ziemia_height.png");
 
 }
 
@@ -287,103 +276,26 @@ void freeOpenGLProgram() {
 
 	glDeleteTextures(1,&k_diffTex);
 	glDeleteTextures(1,&l_diffTex);
-	//glDeleteTextures(1,&k_normalTex);
-	//glDeleteTextures(1,&k_heightTex);
-    //glDeleteTextures(1,&z_diffTex);
-	//glDeleteTextures(1,&z_normalTex);
-	//glDeleteTextures(1,&z_heightTex);
-
+	glDeleteTextures(1,&l2_diffTex);
+	glDeleteTextures(1,&z_diffTex);
 }
-/*
-void rysuj_Ziemie(ShaderProgram *shaderProgram, mat4 mP, mat4 mV, mat4 mM) {
-
-	//Kostka
-float* vertices=Models::CubeInternal::vertices;
-float* normals=Models::CubeInternal::normals;
-float* texCoords=Models::CubeInternal::texCoords;
-float* c1=Models::CubeInternal::c1;
-float* c2=Models::CubeInternal::c2;
-float* c3=Models::CubeInternal::c3;
-int vertexCount=Models::CubeInternal::vertexCount;
 
 
-	//Włączenie programu cieniującego, który ma zostać użyty do rysowania
-	//W tym programie wystarczyłoby wywołać to raz, w setupShaders, ale chodzi o pokazanie,
-	//że mozna zmieniać program cieniujący podczas rysowania jednej sceny
+void rysuj_Ziemie(ShaderProgram *shaderProgram, mat4 P, mat4 V, mat4 M) {
 
+    mat4 Mk = M;
+    Mk = rotate(Mk, PI/2,vec3(-1.0f,0.0f,0.0f));
+    Mk = scale(Mk, vec3(15.0f, 15.0f, 0.1f));
+    Mk = translate (Mk, vec3(0.0f,0.0f, -1.0f));
+    stozek.drawCone(P,V,Mk,shaderProgram,z_diffTex);
+}
 
-	//Przekaż do shadera macierze P,V i M.
-	//W linijkach poniżej, polecenie:
-	//  shaderProgram->getUniformLocation("P")
-	//pobiera numer przypisany zmiennej jednorodnej o podanej nazwie
-	//UWAGA! "P" w powyższym poleceniu odpowiada deklaracji "uniform mat4 P;" w vertex shaderze,
-	//a mP w glm::value_ptr(mP) odpowiada argumentowi  "mat4 mP;" TYM pliku.
-	//Cała poniższa linijka przekazuje do zmiennej jednorodnej P w vertex shaderze dane z argumentu mP niniejszej funkcji
-	//Pozostałe polecenia działają podobnie.
-	//Poniższe polecenia są z grubsza odpowiednikami glLoadMatrixf ze starego opengla
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("P"),1, false, glm::value_ptr(mP));
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("V"),1, false, glm::value_ptr(mV));
-	glUniformMatrix4fv(shaderProgram->getUniformLocation("M"),1, false, glm::value_ptr(mM));
-
-	//Powiąż zmienne typu sampler2D z jednostkami teksturującymi
-	glUniform1i(shaderProgram->getUniformLocation("diffuseMap"),3);
-	glUniform1i(shaderProgram->getUniformLocation("normalMap"),4);
-	glUniform1i(shaderProgram->getUniformLocation("heightMap"),5);
-
-
-	//Przypisz tekstury do jednostek teksturujących
-
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D,k_diffTex);
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D,k_normalTex);
-    glActiveTexture(GL_TEXTURE2);
-    glBindTexture(GL_TEXTURE_2D,k_heightTex);
-    glActiveTexture(GL_TEXTURE3);
-    glBindTexture(GL_TEXTURE_2D,z_diffTex);
-    glActiveTexture(GL_TEXTURE4);
-    glBindTexture(GL_TEXTURE_2D,z_normalTex);
-    glActiveTexture(GL_TEXTURE5);
-    glBindTexture(GL_TEXTURE_2D,z_heightTex);
-
-
-
-	//Powiedz OpenGL że podczas rysowania nalezy przesłać dane do atrybutów o numerach wskazanych jako argument.
-	//Polecenie shaderProgram->getAttribLocation("vertex") zwraca numer atrybutu o nazwie "vertex".
-	//Odpowiada to deklaracji "in vec4 vertex;" w vertex shaderze.
-	//Z grubsza odpowiednik polecenia glEnableClientState
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("vertex"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c1"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c2"));
-    glEnableVertexAttribArray(shaderProgram->getAttribLocation("c3"));
-
-    //Wskaż tablicę z której należy pobrać dane do atrybutu o konkretnym numerze.
-    //Pierwszym argumentem jest numer przypisany atrybutowi, ostatnim tablica zdanymi.
-    //Z grubsza są to odpowiedniki poleceń glVertexPointer,glColorPointer i glNormalPointer ze starego OpenGL
-    glVertexAttribPointer(shaderProgram->getAttribLocation("vertex"),4,GL_FLOAT,false,0,vertices);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("normal"),4,GL_FLOAT,false,0,normals);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("texCoord0"),2,GL_FLOAT,false,0,texCoords);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c1"),4,GL_FLOAT,false,0,c1);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c2"),4,GL_FLOAT,false,0,c2);
-    glVertexAttribPointer(shaderProgram->getAttribLocation("c3"),4,GL_FLOAT,false,0,c3);
-
-	//Narysowanie obiektu
-	glDrawArrays(GL_TRIANGLES,0,vertexCount);
-
-	//Posprzątanie po sobie
-    //Odpowiednik sekwencji poleceń glDisableClientState
-	glDisableVertexAttribArray(shaderProgram->getAttribLocation("vertex"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("color"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("normal"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("texCoord0"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c1"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c2"));
-    glDisableVertexAttribArray(shaderProgram->getAttribLocation("c3"));
-}*/
-
-
+void rysuj_Korzen(ShaderProgram *shaderProgram, mat4 P, mat4 V, mat4 M) {
+    mat4 Mk = M;
+    Mk= rotate(Mk, PI/2,vec3(-1.0f,0.0f,0.0f));
+    Mk = scale(Mk, vec3(0.5f, 0.04f, 0.25f));
+    stozek.drawCone(P,V,Mk,shaderProgram,k_diffTex);
+    }
 
 
 
@@ -401,58 +313,23 @@ void drawScene(GLFWwindow* window, float angle_x, float angle_y,float distance, 
 		glm::vec3(0.0f, 4.0f, 0.0f),
 		glm::vec3(0.0f, 1.0f, 0.0f));
 
-
-    //ziemia
-
-    /*mat4 Mz = mat4(1.0f);
-    Mz=rotate(Mz, -PI/90 ,vec3(1.0f,0.0f,0.0f)); //żeby na wejściu było ok
-    Mz=rotate(Mz,angle_x,vec3(1.0f,0.0f,0.0f));
-    Mz=rotate(Mz,angle_y,vec3(0.0f,1.0f,0.0f));*/
-
     mat4 M = mat4(1.0f);
     M = rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
     M = rotate(M,angle_y,vec3(0.0f,1.0f,0.0f));
 
-    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex,l_diffTex, leaf);
+    // rysuje korzenie
+    rysuj_Korzen(shaderProgram, P, V, M);
+    mat4 Mk= rotate(M, PI/2,vec3(0.0f,-1.0f,0.0f));
+    rysuj_Korzen(shaderProgram, P, V, Mk);
 
+    // rysuje ziemie
+    rysuj_Ziemie(shaderProgram, P, V,M);
 
-    /*
-  //  M = rotate(M,110*PI/180,vec3(-1.0f,0.0f,0.0f));
-
-    //
-
-
-    lisc leaf = lisc();
-
-    //ta czesc moze pewnie byc ladniej napisana - musze pokminic
-    leaf.leaf_normals = leaf_normals;
-    leaf.leaf_texCoords = leaf_texCoords;
-    leaf.leaf_vertices = leaf_vertices;
-    leaf.vertexCount = leaf_vertexCount;
-
-    mat4 M_skalowane = scale(M, vec3(0.005,0.005,0.005));
-  //  leaf.drawLeaf(P,V,M_skalowane,shaderProgram,l_diffTex);
-
-
-    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex);
-
-
-    //mat4 Mz_skalowane=scale(Mz, vec3(500.0f, 0.1f, 500.0f)); //musi byc
-   // (value_ptr(V*Mz_skalowane));
-    //glColor3d(0.0,0.7,0.0);
-	//Narysuj obiekt
-   // rysuj_Ziemie(shaderProgram,P,V,Mz_skalowane);
-   // D.rysuj_drzewo(P, Mz, V, wzrost, shaderProgram);
-
-
-    // pien
-*/
-	//Przerzuć tylny bufor na przedni
+    //rysuje drzewo
+    D.rysuj_drzewo(P,V,M,wzrost,shaderProgram,k_diffTex,l_diffTex, l2_diffTex, leaf);
 	glfwSwapBuffers(window);
 
 }
-
-
 
 int main(void)
 {
@@ -486,7 +363,7 @@ int main(void)
 
 	initOpenGLProgram(window); //Operacje inicjujące
 
-	float angle_x = 0; //Kąt obrotu obiektu
+	float angle_x = -0.2 ; //Kąt obrotu obiektu
 	float angle_y = 0; //Kąt obrotu obiektu
     float distance = -15;
 
@@ -495,27 +372,23 @@ int main(void)
 	//Główna pętla
 	while (!glfwWindowShouldClose(window)) //Tak długo jak okno nie powinno zostać zamknięte
         {
-		//RUCHY KAMERĄI WZROST DRZEWA
+		//RUCHY KAMERĄ I WZROST DRZEWA
 		angle_x += speed_x*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
+		if (angle_x>=0){angle_x=0;}
 		angle_y += speed_y*glfwGetTime(); //Zwiększ kąt o prędkość kątową razy czas jaki upłynął od poprzedniej klatki
-        distance += speed_distance*glfwGetTime();
+        distance += speed_distance*glfwGetTime(); // odleglosc od drzewa
 
         if (distance<=-30) {distance=-30;}
         if (distance>=-5) {distance=-5;}
 		glfwSetTime(0); //Wyzeruj licznik czasu
 
-
 		drawScene(window,angle_x,angle_y,distance, wzrost,D,shaderProgram); //Wykonaj procedurę rysującą
-
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
-
 		if (wzrost<=max_wysokosc_drzewa)
             {
              wzrost=wzrost+tempo_wzrostu;
             }
-
-
-	}
+        }
 
 	freeOpenGLProgram();
 

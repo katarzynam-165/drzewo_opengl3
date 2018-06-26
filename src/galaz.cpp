@@ -27,6 +27,12 @@ int galaz::losuj(int mini, int maxi)
 	return rand()%range + mini;
     };
 
+float galaz:: losuj_wymiar_liscia()
+    {
+      int tmp=losuj(10,25);
+      wymiar_liscia=float(tmp)/15000;
+
+    }
 
 void galaz:: losuj_dlugosc_galezi(float dlugosc_matki)
     {
@@ -48,19 +54,23 @@ void galaz:: losuj_wys_galezi_na_matce()
     wys_galezi_na_matce=temp;
     };
 
-
-
 void galaz:: losuj_kat_na_matce()
     {
+
     int r=losuj(0,200);
     kat_na_matce=float(r*2*PI/100);
     };
 
-//od 15 do 60
+
 void galaz:: losuj_kat_do_pionu()
     {
-    int r=losuj(3,10);
-     kat_do_pionu=float(PI/r);
+    int tmp;
+    if(numer_pokolenia==1){tmp=6;}
+    if(numer_pokolenia==2){tmp=4;}
+    if(numer_pokolenia==3){tmp=3;}
+
+    int r=losuj(tmp,10);
+    kat_do_pionu=float(PI/r);
     };
 
 void galaz::ustaw(float dlugosc_matki, float grubosc_matki)
@@ -77,17 +87,17 @@ void galaz::ustaw(float dlugosc_matki, float grubosc_matki)
     else
         grubosc_galezi = grubosc_matki * 0.7;
 
-
-
-
     losuj_wys_galezi_na_matce();
     losuj_kat_na_matce();
-    losuj_kat_do_pionu();
+
 }
 
 galaz::galaz()
 {
+    losuj_wymiar_liscia();
 }
+
+
 
 galaz::~galaz()
 {

@@ -23,9 +23,6 @@ cone::cone()
    vertexCount=216;
 }
 
-
-
-
 void cone::drawCone(mat4 P, mat4 V, mat4 M,ShaderProgram *shaderProgram, GLuint k_diffTex) {
 
 
